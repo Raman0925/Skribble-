@@ -6,10 +6,12 @@ const createGame = (playerName) => {
     const gameId = uuid.v4(); 
     console.log(gameId)
     const gameData = {
-      players: [{ id: socket.id, name: playerName }], 
+      players: [{ id: socket.id, name: playerName,creator:true }], 
       gameStarted: false,
       currentRound: 0,
       scores: { [socket.id]: 0 }, 
+      totalRound:4,
+      totalTIme:60
     };
      console.log(gameId)
      console.log(gameData)
