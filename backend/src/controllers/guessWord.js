@@ -21,4 +21,4 @@ const guessWord = (socket) => {
       });
     });
   };
-  
+  module.exports = {guessWord}

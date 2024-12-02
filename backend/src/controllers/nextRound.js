@@ -27,4 +27,4 @@ const nextRound = (socket) => {
       });
     });
   };
-  
+  module.exports ={nextRound}

@@ -27,3 +27,4 @@ const startDrawing = (socket) => {
 })
    
 };
+module.exports ={startDrawing}

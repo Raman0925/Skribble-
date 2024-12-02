@@ -24,8 +24,8 @@ const io = GameSocketService(httpServer);
 // app.use('/api/v1/healthcheck', healthCheckRoutes);
 // app.use('/', authRoutes);
 io.on('connection', (socket) => {
-  socket.on('Create_Game', createGame);
-  joinGame();
+createGame(socket)
+  joinGame(socket);
 
   startGame(socket);
   endGame(socket);
